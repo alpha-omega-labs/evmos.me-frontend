@@ -25,6 +25,23 @@ export interface BalanceERC20Item {
     balance: string;
     address: string;
 }
+
+export interface TallyResult {
+    abstain: string;
+    no: string;
+    yes: string;
+    no_with_veto: string;
+}
+export interface Proposals {
+    id: string;
+    type: string;
+    value: string;
+    status: string;
+    total_deposit: string;
+    voting_start_time: string;
+    voting_end_time: string;
+    final_tally_result: TallyResult;
+}
 export interface GlobalState {
     state: {
         walletEvmos: string;
@@ -33,6 +50,7 @@ export interface GlobalState {
         provider: string;
         balanceCosmos: Balance[];
         balanceERC20: BalanceERC20Item[];
+        proposals: Proposals[];
         aphoton: string;
     };
     dispatch: React.Dispatch<Action>;
@@ -45,6 +63,7 @@ const initialState: any = {
     provider: '',
     balanceCosmos: [],
     balanceERC20: [],
+    proposals: [],
     aphoton: '0',
 };
 const store = createContext(initialState);
@@ -83,6 +102,11 @@ const StateProvider = ({ children }: any) => {
                 return {
                     ...state,
                     balanceERC20: action.payload,
+                };
+            case 'proposals':
+                return {
+                    ...state,
+                    proposals: action.payload,
                 };
             default:
                 throw new Error();

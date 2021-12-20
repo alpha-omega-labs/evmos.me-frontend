@@ -632,3 +632,11 @@ export function signTransaction(data: any) {
         return signCosmosTransactionKeplr(wallet, data);
     }
 }
+
+export async function getProposals() {
+    const pubresp = await fetch(`${REACT_APP_BACKEND_URL}/get_proposals/`, {
+        method: 'GET',
+    });
+    let resp = await pubresp.json();
+    return resp;
+}
