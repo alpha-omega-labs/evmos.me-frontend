@@ -39,7 +39,7 @@ export interface GlobalState {
 }
 
 const initialState: any = {
-    walletEvmos: 'evmos1...',
+    walletEvmos: 'genesis...',
     walletEth: '0x...',
     pubkey: 'At/+...',
     provider: '',
