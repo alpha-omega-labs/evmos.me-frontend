@@ -81,7 +81,7 @@ const MsgSend = () => {
                     <FormControl id="destSendControl">
                         <FormLabel id="destSend">Destination</FormLabel>
                         <Input
-                            placeholder="0x.. or evmos1..."
+                            placeholder="0x.. or genesis..."
                             type="text"
                             onChange={(e) => setDest(e.target.value)}
                         />
