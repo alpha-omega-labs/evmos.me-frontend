@@ -35,14 +35,14 @@ export default function CallToActionWithAnnotation() {
                             fontSize={{ base: '4xl', sm: '4xl', md: '6xl' }}
                             lineHeight={'110%'}
                         >
-                            Evmos.me <br />
+                            genesisL1 blockchain <br />
                             <Text
                                 as={'span'}
                                 color={'green.400'}
                                 fontSize={{ base: 'lg', sm: '4xl', md: '6xl' }}
                                 fontWeight={600}
                             >
-                                Your all in one EVMOS wallet
+                               genesisL1 dashboard
                             </Text>
                         </Heading>
 
