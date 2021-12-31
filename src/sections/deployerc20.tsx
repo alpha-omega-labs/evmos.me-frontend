@@ -120,7 +120,7 @@ function DeployERC20Grid() {
 export const DeployErc20Section = () => {
     return (
         <General
-            title="Deploy ERC20 Tokens on EVMOS"
+            title="Deploy ERC20 Tokens"
             subtitle={[<ERC20Subtitle key="deploysub" />]}
             content={[<DeployERC20Grid key="deploygrid" />]}
             icon={[<TransactionsIconFooter key="deployfooter" />]}
