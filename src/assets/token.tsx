@@ -250,7 +250,7 @@ const Token = ({ Icon, name, balance, address, symbol, transfer }: any) => {
                             <FormLabel>Destination Wallet:</FormLabel>
                             <Input
                                 variant="primary"
-                                placeholder="0x... / evmos1..."
+                                placeholder="0x... / genesis..."
                                 onChange={(e) => setDest(e.target.value)}
                             />
                         </FormControl>
