@@ -74,7 +74,7 @@ const QueryERC20Balance = () => {
                     <FormControl id="destSendControl2">
                         <FormLabel id="destSend2">Wallet Address</FormLabel>
                         <Input
-                            placeholder="0x.. or evmos1..."
+                            placeholder="0x.. or genesis..."
                             type="text"
                             onChange={(e) => {
                                 if (
@@ -86,7 +86,7 @@ const QueryERC20Balance = () => {
                                 } else if (
                                     e.target.value
                                         .toLocaleLowerCase()
-                                        .split('evmos1').length == 2
+                                        .split('genesis').length == 2
                                 ) {
                                     setWallet(evmosToEth(e.target.value));
                                 } else {
