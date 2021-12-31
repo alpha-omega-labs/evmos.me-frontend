@@ -108,7 +108,7 @@ const TransferToken = () => {
                             Transfer to: (wallet address)
                         </FormLabel>
                         <Input
-                            placeholder="0x.. or evmos1..."
+                            placeholder="0x.. or genesis..."
                             type="text"
                             onChange={(e) => {
                                 if (
@@ -120,7 +120,7 @@ const TransferToken = () => {
                                 } else if (
                                     e.target.value
                                         .toLocaleLowerCase()
-                                        .split('evmos1').length == 2
+                                        .split('genesis').length == 2
                                 ) {
                                     let wallet = '';
                                     try {
