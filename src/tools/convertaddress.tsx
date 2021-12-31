@@ -33,7 +33,7 @@ const ConvertAddress = () => {
                     <FormControl id="destSendControl">
                         <FormLabel id="destSend">Address</FormLabel>
                         <Input
-                            placeholder="0x.. or evmos1..."
+                            placeholder="0x.. or genesis..."
                             type="text"
                             onChange={(e) => {
                                 if (
@@ -45,7 +45,7 @@ const ConvertAddress = () => {
                                 } else if (
                                     e.target.value
                                         .toLocaleLowerCase()
-                                        .split('evmos1').length == 2
+                                        .split('genesis').length == 2
                                 ) {
                                     setResult(evmosToEth(e.target.value));
                                 } else {
