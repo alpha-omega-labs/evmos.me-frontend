@@ -479,7 +479,7 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
                 fontFamily="var(--chakra-fonts-heading)"
                 fontWeight="bold"
             >
-                Evmos.me
+                genesisL1
             </Text>
 
             <HStack spacing={{ base: '0', md: '6' }} id="hstacksidebar">
