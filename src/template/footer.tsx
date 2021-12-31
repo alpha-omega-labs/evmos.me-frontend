@@ -19,7 +19,7 @@ const Footer = () => {
             id="footerbox"
         >
             <HStack justifyContent="flex-end">
-                <span>#HackAtom2021 - Evmos.me - Hanchon </span>
+                <span>#HackAtom2021 - Evmos.me - Hanchon forked for genesisL1 blockchain</span>
                 <Link href="https://github.com/hanchon-live/evmos.me-frontend">
                     <FaGithub
                         size="30px"
