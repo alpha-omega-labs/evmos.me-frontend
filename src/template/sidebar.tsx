@@ -164,7 +164,7 @@ const SidebarContent = ({ onClose, currentSection, ...rest }: SidebarProps) => {
                         fontFamily="var(--chakra-fonts-heading)"
                         fontWeight="bold"
                     >
-                        Evmos.me
+                        genesisL1
                     </Text>
                 </HStack>
                 <CloseButton
