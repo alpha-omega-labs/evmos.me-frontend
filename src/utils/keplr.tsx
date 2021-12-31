@@ -4,17 +4,17 @@ import { setKeplr, setPubKey, setWalletEth, setWalletEvmos } from './db';
 import { reconnectWallet } from './wallet';
 
 const config = {
-    RPC_URL: 'https://cosmos.rpc.evmos.dev',
-    REST_URL: 'https://rest.rpc.evmos.dev',
-    EXPLORER_URL: 'https://explorer.evmos.org/',
-    NETWORK_NAME: 'Evmos',
+    RPC_URL: 'https://26657.genesisl1.org',
+    REST_URL: 'https://1317.genesisl1.org',
+    EXPLORER_URL: 'https://blockchain.genesisl1.org/',
+    NETWORK_NAME: 'genesisL1',
     NETWORK_TYPE: 'testnet',
-    CHAIN_ID: 'evmos_9000-2',
-    CHAIN_NAME: 'Evmos Testnet OM',
+    CHAIN_ID: 'genesis_29-1',
+    CHAIN_NAME: 'genesisL1',
     COIN_DENOM: 'PHOTON',
     COIN_MINIMAL_DENOM: 'aphoton',
     COIN_DECIMALS: 18,
-    PREFIX: 'evmos',
+    PREFIX: 'genesis',
     COIN_TYPE: 118,
     GAS_PRICE_STEP_LOW: 0.005,
     GAS_PRICE_STEP_AVERAGE: 0.025,
@@ -106,7 +106,7 @@ export async function connectKeplr(state: any) {
         const offlineSigner = window.getOfflineSigner(chainId);
         fireSuccess(
             'Logged in with Keplr',
-            'You can now start using evmos.me!'
+            'You can now start using website!'
         );
         let wallets = await offlineSigner.getAccounts();
         setKeplr();
