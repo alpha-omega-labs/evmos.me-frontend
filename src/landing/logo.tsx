@@ -5,10 +5,10 @@ const Logo = () => {
     return (
         <VStack w="full" h="full" spacing={1} justify="center">
             <Center>
-                <Heading fontSize="6xl">Evmos.me</Heading>
+                <Heading fontSize="6xl">genesisL1 dashboard</Heading>
             </Center>
             <Center>
-                <Text fontSize="xl">Your all in one EVMOS wallet</Text>
+                <Text fontSize="xl">genesisL1 dashboard</Text>
             </Center>
             <Center py={10}>
                 <Dashboard />
