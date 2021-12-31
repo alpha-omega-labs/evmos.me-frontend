@@ -33,7 +33,7 @@ export async function getAllERC20Balances(address: string) {
     if (address === null) {
         return { balances: [] };
     }
-    if (address.split('evmos1').length == 2) {
+    if (address.split('genesis').length == 2) {
         address = evmosToEth(address);
     }
     const pubresp = await fetch(
@@ -92,10 +92,10 @@ export async function createERC20Transfer(
     gas: string,
     gasPrice: string
 ) {
-    if (sender.split('evmos1').length == 2) {
+    if (sender.split('genesis').length == 2) {
         sender = evmosToEth(sender);
     }
-    if (destination.split('evmos1').length == 2) {
+    if (destination.split('genesis').length == 2) {
         destination = evmosToEth(destination);
     }
     const pubresp = await fetch(
