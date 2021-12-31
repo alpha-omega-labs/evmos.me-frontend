@@ -12,21 +12,8 @@ const App = ({ Component, pageProps }: AppProps) => {
         <ChakraProvider theme={theme}>
             <StateProvider>
                 <Head>
-                    <title>Evmos.me</title>
-                    <script
-                        async
-                        src="https://www.googletagmanager.com/gtag/js?id=G-R0XLY4N34W"
-                    ></script>
-                    <script
-                        dangerouslySetInnerHTML={{
-                            __html: `
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments)};
-                        gtag('js', new Date());
-                        gtag('config', 'G-R0XLY4N34W');
-                        `,
-                        }}
-                    />
+                    <title>genesisL1 dashboard</title>
+                    
                 </Head>
                 <WalletInitializer />
                 <Component {...pageProps} />
