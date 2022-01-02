@@ -45,7 +45,7 @@ const ConvertAddress = () => {
                                 } else if (
                                     e.target.value
                                         .toLocaleLowerCase()
-                                        .split('genesis').length == 2
+                                        .split('genesis1').length == 2
                                 ) {
                                     setResult(evmosToEth(e.target.value));
                                 } else {
