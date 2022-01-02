@@ -41,7 +41,7 @@ export async function executeMintERC20(
         return false;
     }
 
-    if (destination.split('genesis').length == 2) {
+    if (destination.split('genesis1').length == 2) {
         destination = evmosToEth(destination);
     } else if (destination.split('0x').length != 2) {
         fireError('Mint ERC20', 'Invalid Contract!');
